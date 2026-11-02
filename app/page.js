@@ -2,7 +2,8 @@ import { Children } from "react";
 import Hero from "./paginas/hero/page";
 import Sobre from "./paginas/sobre/page";
 import Ideais from "./paginas/ideais/page";
-import Unidades from "@/components/Unidades";
+import Unidades from "@/components/CardUnidades";
+import CardEventos from "@/components/CardEventos";
 
 const heroData = {
   title: "Uma luz para",
@@ -83,6 +84,23 @@ export default function Home() {
         destaque="nova descoberta."
         lead="Grupos pensados para respeitar cada fase, criar vínculos e desenvolver novas habilidades."
       />
+
+      <section id="eventos" className="eventos">
+        <div className="eventos-topo">
+          <h2>
+            Nossas aventuras,
+            <br />
+            <em>por evento.</em>
+          </h2>
+
+          <p>
+            Cada pasta guarda histórias, conquistas e sorrisos que fazem parte da
+            nossa caminhada.
+          </p>
+        </div>
+
+        <CardEventos />
+      </section>
     </>
   );
 }

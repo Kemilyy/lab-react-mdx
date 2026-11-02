@@ -62,27 +62,90 @@
         {
           "name": "title",
           "label": "Nome da unidade",
-          "type": "text"
+          "widget": "string"
         },
         {
           "name": "faixa",
           "label": "Faixa etária",
-          "type": "text"
+          "widget": "string"
         },
         {
           "name": "genero",
-          "label": "Gênero",
-          "type": "text"
+          "label": "Gênero (masculina ou feminina)",
+          "widget": "string"
+        },
+        {
+          "name": "lema",
+          "label": "Lema (frase do topo da página)",
+          "widget": "string"
         },
         {
           "name": "resumo",
-          "label": "Resumo",
-          "type": "text"
+          "label": "Resumo (aparece no card)",
+          "widget": "text"
         },
         {
           "name": "ordem",
-          "label": "Ordem",
-          "type": "number"
+          "label": "Ordem na lista",
+          "widget": "string"
+        },
+        {
+          "name": "image",
+          "label": "Imagem do topo",
+          "widget": "image"
+        },
+        {
+          "name": "alt",
+          "label": "Descrição da imagem",
+          "widget": "string"
+        },
+        {
+          "name": "body",
+          "label": "Conteúdo",
+          "widget": "markdown"
+        },
+        {
+          "name": "destaque",
+          "label": "Palavra em destaque",
+          "widget": "string"
+        }
+      ]
+    },
+    {
+      "id": "eventos",
+      "label": "Eventos",
+      "folder": "content/eventos",
+      "extension": "mdx",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Nome do evento",
+          "widget": "string"
+        },
+        {
+          "name": "date",
+          "label": "Data do evento",
+          "widget": "string"
+        },
+        {
+          "name": "image",
+          "label": "Imagem de capa",
+          "widget": "image"
+        },
+        {
+          "name": "alt",
+          "label": "Descrição da imagem",
+          "widget": "string"
+        },
+        {
+          "name": "photoCount",
+          "label": "Quantidade de fotos",
+          "widget": "string"
+        },
+        {
+          "name": "body",
+          "label": "Conteúdo do evento",
+          "widget": "markdown"
         }
       ]
     }

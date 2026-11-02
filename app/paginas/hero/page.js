@@ -1,22 +1,36 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero({ title, destaque, lead, lema, fundacao, desbravadores, unidades, image, alt, }) {
+export default function Hero({
+    title,
+    destaque,
+    lead,
+    lema,
+    fundacao,
+    desbravadores,
+    unidades,
+    image,
+    alt,
+}) {
     const anos = new Date().getFullYear() - Number(fundacao);
 
     return (
         <section className="hero">
-            <Image
-                src={image}
-                alt={alt}
-                fill
-                priority
-                sizes="(max-width: 720px) 100vw, 62vw"
-                className="hero-imagem"
-            />
+            {/* Área própria da foto: ocupa 62% da largura, à direita */}
+            <div className="hero-midia">
+                <Image
+                    src={image}
+                    alt={alt}
+                    fill
+                    priority
+                    sizes="(max-width: 720px) 100vw, 62vw"
+                    className="hero-imagem"
+                />
+            </div>
 
             <div className="hero-conteudo">
                 <p className="hero-eyebrow">Desde {fundacao} · {lema}</p>
+
                 <h1 className="hero-titulo">
                     {title} <em>{destaque}</em>
                 </h1>
@@ -48,5 +62,5 @@ export default function Hero({ title, destaque, lead, lema, fundacao, desbravado
                 </dl>
             </div>
         </section>
-    )
+    );
 }
