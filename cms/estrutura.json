@@ -6,9 +6,84 @@
       "folder": "content/paginas",
       "extension": "mdx",
       "fields": [
-        { "name": "title", "label": "Título", "widget": "string" },
-        { "name": "lead", "label": "Abertura", "widget": "text" },
-        { "name": "body", "label": "Conteúdo", "widget": "markdown" }
+        {
+          "name": "title",
+          "label": "Título",
+          "widget": "string"
+        },
+        {
+          "name": "lead",
+          "label": "Abertura",
+          "widget": "text"
+        },
+        {
+          "name": "body",
+          "label": "Conteúdo",
+          "widget": "markdown"
+        },
+        {
+          "name": "destaque",
+          "label": "Palavra em destaque",
+          "widget": "string"
+        },
+        {
+          "name": "lema",
+          "label": "Lema",
+          "widget": "string"
+        },
+        {
+          "name": "fundacao",
+          "label": "Ano de fundação",
+          "widget": "string"
+        },
+        {
+          "name": "desbravadores",
+          "label": "Nº de desbravadores",
+          "widget": "string"
+        },
+        {
+          "name": "image",
+          "label": "Imagem",
+          "widget": "image"
+        },
+        {
+          "name": "alt",
+          "label": "Descrição da imagem",
+          "widget": "string"
+        }
+      ]
+    },
+    {
+      "id": "unidades",
+      "label": "Unidades",
+      "folder": "content/unidades",
+      "extension": "mdx",
+      "fields": [
+        {
+          "name": "title",
+          "label": "Nome da unidade",
+          "type": "text"
+        },
+        {
+          "name": "faixa",
+          "label": "Faixa etária",
+          "type": "text"
+        },
+        {
+          "name": "genero",
+          "label": "Gênero",
+          "type": "text"
+        },
+        {
+          "name": "resumo",
+          "label": "Resumo",
+          "type": "text"
+        },
+        {
+          "name": "ordem",
+          "label": "Ordem",
+          "type": "number"
+        }
       ]
     }
   ]
